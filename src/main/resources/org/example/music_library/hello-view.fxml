@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: #563A9C;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.music_library.HelloController">
+   <children>
+      <ListView fx:id="songListView" editable="true" layoutX="287.8" layoutY="38.0" onMouseClicked="#selectTracksview" prefHeight="348.0" prefWidth="290.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #8A4FFF; -fx-border-width: 2px; -fx-font-size: 14px; -fx-background-radius: 15px;" AnchorPane.leftAnchor="287.8" AnchorPane.rightAnchor="22.600000000000023" />
+
+      <Button layoutX="30.0" layoutY="289.0" mnemonicParsing="false" onAction="#handleAddSong" prefHeight="42.0" prefWidth="232.0" style="-fx-background-color: #FFD700; -fx-text-fill: #4B0082; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 5px; -fx-padding: 10 20;" text="Add Song" />
+      <Button fx:id="handleDeleteSong" layoutX="29.0" layoutY="342.0" mnemonicParsing="false" onAction="#handleDeleteSong" prefHeight="42.0" prefWidth="112.0" style="-fx-background-color: #FF6347; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 5px; -fx-padding: 10 20;" text="Delete" />
+      <Button fx:id="handleUpdateSong" layoutX="150.0" layoutY="342.0" mnemonicParsing="false" onAction="#handleUpdateSong" prefHeight="42.0" prefWidth="112.0" style="-fx-background-color: #32CD32; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 5px; -fx-padding: 10 20;" text="Update" />
+
+      <TextField fx:id="trackTitleField" layoutX="88.8" layoutY="38.0" style="-fx-background-color: #D4BEE4; -fx-font-size: 14px; -fx-background-radius: 5px; -fx-padding: 8;" AnchorPane.leftAnchor="88.8" />
+      <TextField fx:id="trackArtistField" layoutX="88.8" layoutY="82.0" style="-fx-background-color: #D4BEE4; -fx-font-size: 14px; -fx-background-radius: 5px; -fx-padding: 8;" AnchorPane.leftAnchor="88.8" />
+      <TextField fx:id="trackAlbumField" layoutX="88.8" layoutY="126.0" style="-fx-background-color: #D4BEE4; -fx-font-size: 14px; -fx-background-radius: 5px; -fx-padding: 8;" AnchorPane.leftAnchor="88.8" />
+      <TextField fx:id="trackGenreField" layoutX="89.6" layoutY="170.0" style="-fx-background-color: #D4BEE4; -fx-font-size: 14px; -fx-background-radius: 5px; -fx-padding: 8;" AnchorPane.leftAnchor="89.6" />
+      <TextField fx:id="trackDurationField" layoutX="89.4" layoutY="214.0" style="-fx-background-color: #D4BEE4; -fx-font-size: 14px; -fx-background-radius: 5px; -fx-padding: 8;" AnchorPane.leftAnchor="89.4" />
+
+      <Label layoutX="31.0" layoutY="46.0" style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Title" textFill="WHITE" />
+      <Label layoutX="29.0" layoutY="94.0" style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Artist" textFill="WHITE" />
+      <Label layoutX="29.0" layoutY="137.0" style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Album" textFill="WHITE" />
+      <Label layoutX="28.0" layoutY="180.0" style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Genre" textFill="WHITE" />
+      <Label layoutX="27.0" layoutY="222.0" style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Duration" textFill="WHITE" />
+      <Label fx:id="trackidlabel" layoutX="98.0" layoutY="8.0" style="-fx-font-size: 14px; -fx-font-weight: bold; color: white;" />
+
+
+   </children>
+</AnchorPane>
