@@ -57,6 +57,8 @@
 
 # PRESENTATION
 
+![presentation](https://github.com/MuzarA/Database-OOP-project/blob/8d6bc466d5bc471feb774ebef8c0623c02c49c3d/oop%20and%20database.pdf)
+
 
 
 
